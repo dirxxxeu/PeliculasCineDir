@@ -1,0 +1,68 @@
+2026-10-27 22:08:33.841925+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "GENEROS" no encontrada
+Table "GENEROS" not found; SQL statement:
+
+   CREATE TABLE peliculas (
+       id_pelicula INT AUTO_INCREMENT PRIMARY KEY,
+       titulo VARCHAR(150) NOT NULL,
+       anio_estreno INT CHECK (anio_estreno >= 1888),
+       duracion_minutos INT CHECK (duracion_minutos > 0),
+       id_director INT,
+       id_genero INT,
+       CONSTRAINT fk_pelicula_director FOREIGN KEY (id_director) REFERENCES directores(id_director) ON DELETE SET NULL,
+       CONSTRAINT fk_pelicula_genero FOREIGN KEY (id_genero) REFERENCES generos(id_genero) ON DELETE SET NULL
+ [42102-252]
+2026-10-27 22:08:48.548863+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "GENEROS" no encontrada
+Table "GENEROS" not found; SQL statement:
+
+   CREATE TABLE peliculas (
+       id_pelicula INT AUTO_INCREMENT PRIMARY KEY,
+       titulo VARCHAR(150) NOT NULL,
+       anio_estreno INT CHECK (anio_estreno >= 1888),
+       duracion_minutos INT CHECK (duracion_minutos > 0),
+       id_director INT,
+       id_genero INT,
+       CONSTRAINT fk_pelicula_director FOREIGN KEY (id_director) REFERENCES directores(id_director) ON DELETE SET NULL,
+       CONSTRAINT fk_pelicula_genero FOREIGN KEY (id_genero) REFERENCES generos(id_genero) ON DELETE SET NULL
+ [42102-252]
+2026-10-27 22:13:54.607374+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "GENEROS" no encontrada
+Table "GENEROS" not found; SQL statement:
+
+   CREATE TABLE peliculas (
+       id_pelicula INT AUTO_INCREMENT PRIMARY KEY,
+       titulo VARCHAR(150) NOT NULL,
+       anio_estreno INT CHECK (anio_estreno >= 1888),
+       duracion_minutos INT CHECK (duracion_minutos > 0),
+       id_director INT,
+       id_genero INT,
+       CONSTRAINT fk_pelicula_director FOREIGN KEY (id_director) REFERENCES directores(id_director) ON DELETE SET NULL,
+       CONSTRAINT fk_pelicula_genero FOREIGN KEY (id_genero) REFERENCES generos(id_genero) ON DELETE SET NULL
+ [42102-252]
+2026-10-27 22:16:47.303164+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "GENEROS" no encontrada
+Table "GENEROS" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS PELICULAS (
+    ID_PELICULA INT PRIMARY KEY AUTO_INCREMENT,
+    TITULO VARCHAR(150) NOT NULL,
+    ANIO_ESTRENO INT,
+    DURACION_MINUTOS INT,
+    ID_DIRECTOR INT,
+    ID_GENERO INT,
+    FOREIGN KEY (ID_DIRECTOR) REFERENCES DIRECTORES(ID_DIRECTOR) ON DELETE SET NULL,
+    FOREIGN KEY (ID_GENERO) REFERENCES GENEROS(ID_GENERO) ON DELETE SET NULL
+) [42102-252]
+2026-10-27 22:17:04.480724+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "GENEROS" no encontrada
+Table "GENEROS" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS PELICULAS (
+    ID_PELICULA INT PRIMARY KEY AUTO_INCREMENT,
+    TITULO VARCHAR(150) NOT NULL,
+    ANIO_ESTRENO INT,
+    DURACION_MINUTOS INT,
+    ID_DIRECTOR INT,
+    ID_GENERO INT,
+    FOREIGN KEY (ID_DIRECTOR) REFERENCES DIRECTORES(ID_DIRECTOR) ON DELETE SET NULL,
+    FOREIGN KEY (ID_GENERO) REFERENCES GENEROS(ID_GENERO) ON DELETE SET NULL
+) [42102-252]
