@@ -1,7 +1,7 @@
 
 
 ![Diagrama del Proyecto](https://github.com/dirxxxeu/PeliculasCineDir/blob/main/logotipo-peliculascinedir.jpeg)
-# 🎬 Sistema de Gestión de Películas (Java + H2)
+# 🎬 Sistema de Gestión de Películas (Java + H2)  -  PeliculasCineDir
 
 Aplicación modular desarrollada en **Java** y conectada a una base de datos embebida **H2**, diseñada para gestionar películas, directores y géneros de forma sencilla, directa y automatizada.
 
@@ -52,9 +52,11 @@ El sistema opera sobre 3 tablas conectadas mediante claves foráneas (`FOREIGN K
 4. Ejecuta el archivo **`MenuPrincipal.java`**. El sistema creará las tablas automáticamente y te mostrará el siguiente menú en consola:
 
 ```text
+Tablas verificadas correctamente.
+
 --- GESTIÓN DE PELÍCULAS ---
 1. Registrar película completa (Director, Género y Película)
 2. Listar todas las películas
 3. Eliminar película por ID
 4. Salir
-Elige una opción:
+Elige una opción: 
