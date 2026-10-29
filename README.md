@@ -24,7 +24,7 @@ El proyecto se compone de tres clases principales ubicadas en el mismo paquete:
 
 1. **`Conexion.java`**: Centraliza la apertura de la conexión a la base de datos H2 mediante JDBC.
 2. **`CrearTablas.java`**: Verifica y crea automáticamente las tablas relacionales (`DIRECTORES`, `GENEROS`, `PELICULAS`) si no existen previamente.
-3. **`MenuPrincipal.java`**: Contiene la lógica interactiva por consola (`main`), permitiendo al usuario navegar por las opciones del sistema.
+3. **`MenuPpal.java`**: Contiene la lógica interactiva por consola (`main`), permitiendo al usuario navegar por las opciones del sistema.
 
 ---
 
